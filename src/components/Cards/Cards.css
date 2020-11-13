@@ -1,0 +1,122 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  align-self: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 45px 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.col01 {
+  margin-bottom: 15px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.col02 {
+  margin-bottom: 50px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.post-card {
+  padding: 0.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-card:hover {
+  transform: scale(1.03);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.col01 .post-thumbnail {
+  height: 270px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.col02 .post-thumbnail {
+  height: 170px;
+  border-radius: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.2s linear;
+}
+
+.post-content {
+  padding: 20px 0 10px;
+}
+
+.title {
+  color: #252e48;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.title:hover {
+  color: #e5c3d3;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col01,
+  .col02 {
+    grid-auto-rows: minmax(250px, auto);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col01 .post-thumbnail {
+    height: 350px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .col02 .post-thumbnail {
+    height: 350px;
+    border-radius: 12px;
+  }
+}

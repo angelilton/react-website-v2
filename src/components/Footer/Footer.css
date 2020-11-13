@@ -1,0 +1,126 @@
+footer {
+  background-color: #242424;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fafafa;
+}
+
+.subscription p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.subscription-heading {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.subscription-text {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer-input {
+  font-size: 1.8rem;
+  padding: 0.8rem 2rem;
+  border-radius: 2px;
+  margin: 1.6rem 1rem;
+  border: none;
+}
+
+.footer-input::placeholder {
+  color: #b1b1b1;
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.link-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  max-width: 150px;
+  box-sizing: border-box;
+  color: #fafafa;
+}
+
+.link-items h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.link-items a {
+  color: #fafafa;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-items a:hover {
+  color: #e5c3d3;
+  transition: 200ms ease-in;
+}
+
+.link-items i {
+  font-size: 1.8rem;
+  margin-right: 1.6rem;
+}
+
+@media screen and (max-width: 470px) {
+  .footer-links {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .link-items {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .footer-links-wrapper {
+    grid-gap: 15px;
+  }
+  .subscription-heading {
+    font-size: 1.6rem;
+  }
+}
+
+.copy-right {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fafafa;
+  background-color: #b1b1b1;
+  font-size: 1.5rem;
+}

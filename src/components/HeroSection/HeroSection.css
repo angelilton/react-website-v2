@@ -1,0 +1,73 @@
+.hero-container {
+  background: url('../../images/img-home.jpg') center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero-container > h1 {
+  color: #fafafa;
+  font-size: 7rem;
+}
+
+.hero-container > p {
+  color: #fafafa;
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin: 5rem 0;
+}
+
+/* .hero-btns {
+  width: 463px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 0.6rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 5rem;
+  }
+
+  .hero-container > p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 4rem;
+  }
+
+  .hero-container > p {
+    font-size: 2rem;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btns .btn-primary {
+    padding: 1rem;
+  }
+
+  .hero-btns .btn-outline {
+    padding: 1rem 4.2rem;
+  }
+}
